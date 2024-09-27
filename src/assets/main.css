@@ -1,0 +1,116 @@
+@import './base.css';
+
+/* tailwind 配置 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+/* 通用 */
+.pic-auto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.max-w-1280 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* 重置 */
+select:focus-visible {
+  outline: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+/* ? 下拉選單 select */
+.select {
+  @apply relative w-full border border-white rounded-lg px-2 py-1 text-[16px];
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('@/assets/images/icon/select-arrow.svg') no-repeat right center;
+  background-size: 20px;
+  background-position: calc(100% - 12px) center;
+}
+
+.select-pc {
+  @apply relative w-full border-4 border-white rounded-full px-4 py-2 text-[16px];
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('@/assets/images/icon/select-arrow.svg') no-repeat right center;
+  background-size: 20px;
+  background-position: calc(100% - 12px) center;
+}
+
+/* ? 輸入框 input */
+.input {
+  @apply relative w-full border border-white rounded-lg px-2 py-1 text-[16px] bg-transparent;
+}
+
+.input-pc {
+  @apply relative w-full border-4 border-white rounded-full px-4 py-2 text-[16px] bg-transparent;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input-pc::placeholder {
+  color: #fff;
+}
+
+.custom-date-input {
+  @apply relative w-full border border-white rounded-lg px-2 py-1 text-[16px];
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  background: url('@/assets/images/icon/select-arrow.svg') no-repeat right center;
+  background-size: 20px;
+  background-position: calc(100% - 12px) center;
+}
+.custom-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.custom-date-input-pc {
+  @apply relative w-full border-4 border-white rounded-full px-4 py-2 text-[16px];
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  background: url('@/assets/images/icon/select-arrow.svg') no-repeat right center;
+  background-size: 20px;
+  background-position: calc(100% - 12px) center;
+}
+
+.custom-date-input-pc::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.custom-date-input-placeholder {
+  @apply absolute left-2 top-1/2 transform -translate-y-1/2 text-white pointer-events-none bg-blue-2;
+}
+
+.custom-date-input-placeholder-pc {
+  @apply absolute left-4 top-1/2 transform -translate-y-1/2 text-white pointer-events-none bg-blue-2;
+}

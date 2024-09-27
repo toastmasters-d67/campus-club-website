@@ -1,0 +1,15 @@
+:root {
+  --bg: #e5eeee;
+  --blue-1: #5f839e;
+  --blue-2: #0b476a;
+  --yellow-1: #f8e888;
+  --green-1: #005034;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  line-height: 1.6;
+  font-family: 'Poppins', Inter;
+  font-size: 16px;
+}
