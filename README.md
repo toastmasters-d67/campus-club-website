@@ -1,4 +1,4 @@
-# 202409-school-web
+# campus-club-website
 
 This template should help get you started developing with Vue 3 in Vite.
 
